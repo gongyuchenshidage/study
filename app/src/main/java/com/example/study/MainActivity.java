@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             switch(v.getId()){
                 case R.id.btn_ui:
                     intent = new Intent(MainActivity.this,UIActivity.class);
-                    ToastUtil.showMsg( MainActivity.this,"hello github" );
+                    ToastUtil.showMsg( MainActivity.this," github hello" );
                     break;
                 case R.id.btn_data:
                     intent = new Intent(MainActivity.this,DataStorageActivity.class);
