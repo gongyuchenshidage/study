@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".TextViewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="龚哥流弊"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="龚哥流弊的很"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginTop="10dp"/>
+<!--可以用drawable属性设置图片-->
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_arrow_off"
+        android:text="林允儿"
+        android:textSize="24sp" />
+</LinearLayout>

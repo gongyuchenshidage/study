@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--默认是水平排列-->
+    <!--margin是距离外部元素，padding是距离内部元素-->
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:padding="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0033"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        >
+        <!--gravity可以设置内部元素的对齐方式-->
+        <!--weight用来设置权重，把剩余内容按权重进行分配-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF0033"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#55AA99"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+</LinearLayout>
