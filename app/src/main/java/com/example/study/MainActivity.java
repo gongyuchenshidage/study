@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import com.example.study.datastorage.DataStorageActivity;
 
+import util.ToastUtil;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             switch(v.getId()){
                 case R.id.btn_ui:
                     intent = new Intent(MainActivity.this,UIActivity.class);
+                    ToastUtil.showMsg( MainActivity.this,"hello github" );
                     break;
                 case R.id.btn_data:
                     intent = new Intent(MainActivity.this,DataStorageActivity.class);
